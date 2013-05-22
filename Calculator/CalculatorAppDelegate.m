@@ -6,17 +6,17 @@
 //  Copyright (c) 2013 Jesse Nelson. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CalculatorAppDelegate.h"
 
-#import "ViewController.h"
+#import "CalculatorViewController.h"
 
-@implementation AppDelegate
+@implementation CalculatorAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.viewController = [[CalculatorViewController alloc] initWithNibName:@"CalculatorViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
